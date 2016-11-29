@@ -1,0 +1,27 @@
+{
+  "name": "purescript-webapp",
+  "version": "0.0.0",
+  "license": "LGPL-3.0+",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bodil/purescript-webapp.git"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "output"
+  ],
+  "dependencies": {
+    "purescript-prelude": "^2.1.0",
+    "purescript-vdom": "^2.0.0",
+    "purescript-smolder": "^6.0.0",
+    "purescript-smolder-vdom": "^1.0.0",
+    "purescript-signal": "^8.0.0",
+    "purescript-foreign-generic": "^2.0.0",
+    "purescript-store": "^1.0.0"
+  },
+  "devDependencies": {
+    "purescript-psci-support": "^2.0.0"
+  }
+}

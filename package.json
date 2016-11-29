@@ -1,0 +1,12 @@
+{
+  "name": "purescript-webapp",
+  "scripts": {
+    "start": "webpack-dev-server --progress --inline --config test/webpack.config.js"
+  },
+  "devDependencies": {
+    "purs-loader": "^2.1.0",
+    "source-map-loader": "^0.1.5",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
