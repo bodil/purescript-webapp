@@ -28,7 +28,7 @@ import Web.App.Types (EffWeb)
 into :: ∀ e. String → Eff (err :: EXCEPTION, dom :: DOM | e) Node
 into selector = do
   doc ← window >>= document >>= htmlDocumentToParentNode >>> pure
-  elem ← toMaybe <$> querySelector "#content" doc
+  elem ← toMaybe <$> querySelector selector doc
   case elem of
     Just elem' → pure (elementToNode elem')
     Nothing → throwException (error ("Web.App.into: No element matching " <> show selector))
